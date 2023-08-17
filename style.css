@@ -228,60 +228,6 @@ i {
   color: #06121e;
 }
 
-.haircuts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 0 44px 34px 44px;
-}
-
-.haircut {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #FFF;
-  border-radius: 8px;
-  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
-  overflow: hidden;
-}
-.haircut img {
-  width: 100%;
-  max-width: 354px;
-  transition: transform 0.2s;
-}
-
-.haircut img:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-.haircut-info {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 14px;
-  background-color: #FFF;
-  z-index: 99;
-}
-
-.haircut-info button {
-  color: #FFF;
-  background-color: #d94140;
-  padding: 4px 8px;
-  border-radius: 4px;
-  border: 0;
-  cursor: default;
-}
-
-@media screen and (max-width: 768px) {
-  .haircuts {
-    flex-direction: column;
-  }
-  .haircut img {
-    max-width: 740px;
-  }
-}
 .footer {
   display: flex;
   flex-direction: column;
