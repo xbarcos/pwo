@@ -11,8 +11,9 @@ header {
 
 .header-content {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 i {
@@ -20,6 +21,7 @@ i {
 }
 
 .header-icons {
+  margin-top: 50px;
   display: flex;
   gap: 14px;
 }
@@ -134,7 +136,12 @@ i {
   margin: 14px 0;
 }
 
-.button-contact:hover {
+.button-contact:disabled {
+  background-color: #de6766;
+  cursor: default;
+}
+
+.button-contact:not([disabled]):hover {
   animation: scaleButton 0.8s alternate infinite;
 }
 
@@ -243,45 +250,6 @@ i {
   color: #FFF;
 }
 
-.btn-whatsapp {
-  position: fixed;
-  bottom: 14px;
-  right: 24px;
-  z-index: 99;
-}
-.btn-whatsapp img {
-  max-width: 74px;
-  transition: transform 0.4s;
-}
-.btn-whatsapp img:hover {
-  transform: scale(1.1);
-}
-
-.btn-whatsapp .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  width: 120px;
-  top: 8px;
-  left: -144px;
-  padding: 6px;
-  border-radius: 8px;
-  text-align: center;
-  background-color: #232224;
-  color: #FFF;
-  opacity: 0;
-  transition: opacity 0.4s;
-}
-
-.btn-whatsapp:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .btn-whatsapp img {
-    max-width: 64px;
-  }
-}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
@@ -326,7 +294,6 @@ a {
 
 .flex-form {
   margin-top: 50px;
-  display: -webkit-box;
   display: flex;
   z-index: 10;
   position: relative;
@@ -342,9 +309,20 @@ a {
   font-size: 1rem;
   border-radius: 0;
   outline: 0;
-  -webkit-appearance: none;
 }
 
-input[type="search"] {
+input[type="email"] {
   flex-basis: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-form {
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer p {
+    max-width: 300px;
+  }
 }
