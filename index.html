@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Poke World Online</title>
+  </head>
+  <body>
+    <div class="bg-home">
+      <header>
+        <nav class="header-content container">
+          <div class="header-icons" data-aos="fade-down">
+            <a href="https://instagram.com/pokeworldonline" target="_blank">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://fb.com/playpokeworld" target="_blank">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://discord.gg/Etn9aRJ9me" target="_blank">
+              <i class="fa-brands fa-discord fa-2x"></i>
+            </a>
+          </div>
 
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-  <title>Poke World Online</title>
-</head>
-<body>
-  <div class="bg-home">
-    <header>
-      <nav class="header-content container">
-        <div class="header-icons" data-aos="fade-down">
-          <a href="https://instagram.com/pokeworldonline" target="_blank">
-           <i class="fa-brands fa-instagram fa-2x"></i>   
-          </a>
-          <a href="https://fb.com/playpokeworld" target="_blank">
-            <i class="fa-brands fa-facebook fa-2x"></i>   
-          </a>
-          <a href="https://discord.gg/Etn9aRJ9me" target="_blank">
-            <i class="fa-brands fa-discord fa-2x"></i>   
-          </a>
-        </div>
-
-        <div class="header-logo" id="header-logo" data-aos="fade-up" data-aos-delay="300">
-          <img
-            data-aos="flip-up"
+          <div
+            class="header-logo"
+            id="header-logo"
+            data-aos="fade-up"
             data-aos-delay="300"
-            data-aos-duration="1500"
-            src="press-kit/3.png" 
-            alt="Logo da PWO"
-          />
-        </div>
+          >
+            <img
+              data-aos="flip-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              src="press-kit/3.png"
+              alt="Logo da PWO"
+            />
+          </div>
 
-
-       <!-- **// LOGIN DESATIVADO NO SITE ATÉ SEGUNDA ORDEM
+          <!-- **// LOGIN DESATIVADO NO SITE ATÉ SEGUNDA ORDEM
          <div data-aos="fade-down">
           <a class="header-button" href="login.html">Log-in</a>
         </div>-->
+        </nav>
 
-      </nav>
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+          <h1>JOGUE CONOSCO</h1>
+          <p>
+            Acompanhe pelo discord o lançamento da Beta Fechada em Setembro de
+            2023!
+          </p>
+          <a
+            href="https://discord.gg/Etn9aRJ9me"
+            class="button-contact"
+            target="_blank"
+            >Acompanhe Já!</a
+          >
+        </main>
+      </header>
+    </div>
 
-      <main class="hero container" data-aos="fade-up" data-aos-delay="400">
-        <h1>JOGUE CONOSCO</h1>
-        <p>Acompanhe pelo discord o lançamento da Beta Fechada em Setembro de 2023!</p>
-        <a href="https://discord.gg/Etn9aRJ9me" class="button-contact" target="_blank">Acompanhe Já!</a>
-      </main>
-
-    </header>
-  </div>
- 
-  <!--<section class="about">
+    <!--<section class="about">
     <div class="container about-content">
       <div data-aos="zoom-in" data-aos-delay="100">
         <img 
@@ -80,30 +97,35 @@
     </div>
   </section>-->
 
-  <div class="services">
-    <h2>Digite seu e-mail para receber informações sobre o lançamento da Beta!</h2>
-    <div class="subscribe-box"></div>
-      <form  class="flex-form">
+    <div class="services">
+      <h2>
+        Digite seu e-mail para receber informações sobre o lançamento da Beta!
+      </h2>
+      <div class="subscribe-box"></div>
+      <form class="flex-form">
         <label for="from">
           <i class="fa-solid fa-envelope"></i>
         </label>
-        <input type="email" placeholder="Digite seu e-mail">
-        <input type="submit" value="Enviar">
+        <input type="email" placeholder="Digite seu e-mail" />
+        <input type="submit" value="Enviar" />
       </form>
-  </div>
-
-  <footer class="footer">
-    <div>
-      <img 
-        src="press-kit/pin-icon-128x128.png" 
-        alt="Logo PWO"
-      />
     </div>
 
-    <p>Pokémon Copyright © 1995 - 2017 Nintendo/Creatures Inc./GAME FREAK Inc.</p>
-    <p>Pokémon And All Respective Names are Trademarks of Nintendo 1996-2023. Poke World Online is not affiliated with Nintendo, Creatures Inc. and GAME FREAK Inc.</p>
-  </footer>
+    <footer class="footer">
+      <div>
+        <img src="press-kit/pin-icon-128x128.png" alt="Logo PWO" />
+      </div>
 
-  <script src="script.js"></script>
-</body>
+      <p>
+        Pokémon Copyright © 1995 - 2023 Nintendo/Creatures Inc./GAME FREAK Inc.
+      </p>
+      <p>
+        Pokémon And All Respective Names are Trademarks of Nintendo 1996-2023.
+        Poke World Online is not affiliated with Nintendo, Creatures Inc. and
+        GAME FREAK Inc.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
