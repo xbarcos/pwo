@@ -6,4 +6,4 @@
 First, you just need to open index.html at your browser, or open a LiveServer, using VsCode
 
 ## What is it
-Just a landing page for the game Poke World Online, that you can check in production here [PWO](www.pokeworldonline.com)
+Just a landing page for the game Poke World Online, that you can check in production here [PWO](https://www.pokeworldonline.com)
