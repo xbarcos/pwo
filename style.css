@@ -5,6 +5,11 @@
   outline: 0;
 }
 
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
 header {
   width: 100%;
 }
@@ -17,13 +22,16 @@ header {
 }
 
 i {
-  color: #FFF;
+  color: #fff;
 }
 
 .header-icons {
-  margin-top: 50px;
   display: flex;
   gap: 14px;
+}
+
+.header-icons i {
+  font-size: 2rem;
 }
 
 .header-icons a:hover i {
@@ -40,10 +48,10 @@ i {
   }
 }
 .header-button {
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   padding: 8px 24px;
   border-radius: 4px;
-  color: #FFF;
+  color: #fff;
   background-color: transparent;
   transition: background-color 0.8s;
 }
@@ -58,7 +66,7 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 15px;
-  width: 45%;
+  width: 35%;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,7 +80,7 @@ i {
     font-size: 34px;
   }
   .header-logo img {
-    width: 150%;
+    width: 250%;
     margin-top: 46px;
   }
   .header-button {
@@ -82,7 +90,8 @@ i {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .bg-home {
@@ -93,7 +102,8 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/bg.png");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("./assets/background.png");
   left: 0;
   top: 0;
   width: 100%;
@@ -106,8 +116,8 @@ i {
 }
 
 .hero {
-  color: #FFF;
-  min-height: 80vh;
+  color: #fff;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +137,7 @@ i {
 
 .button-contact {
   padding: 14px 28px;
-  color: #FFF;
+  color: #fff;
   background-color: #d94140;
   border: 0;
   font-size: 18px;
@@ -143,6 +153,59 @@ i {
 .button-contact:not([disabled]):hover {
   animation: scaleButton 0.8s alternate infinite;
 }
+/* PROGRESS BAR SECTION */
+
+#progress {
+  position: relative;
+  margin-bottom: 80px;
+  width: 800px;
+}
+
+#progress-bar {
+  position: absolute;
+  background: #d94140;
+  height: 5px;
+  width: 5%;
+  top: 50%;
+  left: 0;
+}
+
+#progress-num {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#progress-num::before {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+
+#progress-num .step {
+  color: white;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+#progress-num .step.inactive {
+  filter: grayscale(100%);
+}
+
+
 
 @keyframes scaleButton {
   from {
@@ -164,6 +227,9 @@ i {
   .hero p {
     font-size: 14px;
   }
+  #progress-num .step {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero h1 {
@@ -173,7 +239,7 @@ i {
 .about {
   background-color: #06121e;
   overflow: hidden;
-  color: #FFF;
+  color: #fff;
 }
 
 .about-content {
@@ -206,7 +272,7 @@ i {
   }
 }
 .services {
-  background-color: #FFF;
+  background-color: #fff;
   color: #232224;
   display: flex;
   flex-direction: column;
@@ -240,13 +306,13 @@ i {
   justify-content: center;
   padding: 54px 0;
   gap: 24px;
-  color: #FFF;
+  color: #fff;
 }
 
 .footer-icons {
   display: flex;
   gap: 8px;
-  color: #FFF;
+  color: #fff;
 }
 
 body {
