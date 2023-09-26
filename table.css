@@ -1,17 +1,16 @@
 .pricing-container {
   background-color: white;
-  padding: 50px;
   display: flex;
   justify-content: center;
 }
 
 .pricing {
-    background-color: white;
-    text-align: center;
-    padding: 50px;
+  background-color: white;
+  text-align: center;
+  padding: 50px;
 }
 .pricing h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 /* Create three columns of equal width */
 .columns {
@@ -22,11 +21,12 @@
 /* Style the list */
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  background-color: #06121e;
+  border-radius: 1rem;
 }
 
 /* Add shadows on hover */
@@ -38,21 +38,35 @@
 .price .header {
   background-color: #06121e;
   color: white;
-  font-size: 25px;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 /* List items */
 .price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  text-align: left;
+  color: white;
+}
+
+.founder-header-image {
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
 }
 
 /* Grey list item */
 .price .grey {
-  background-color: #eee;
-  font-size: 35px;
-  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 800;
+  text-align: center;
 }
 
 /* The "Sign Up" button */
@@ -64,16 +78,27 @@
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+  border-radius: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+.button:hover {
+  background-color: #d26060;
+}
+
+.ball-icon {
+  width: 45px;
+  vertical-align: -0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
   .pricing-container {
     flex-direction: column;
     width: 100%;
-    padding: 0;
   }
   .columns {
     width: 100%;
-    padding: 10px;
+  }
+  .pricing {
+    margin: 0;
   }
 }
