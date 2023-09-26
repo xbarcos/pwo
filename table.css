@@ -1,13 +1,13 @@
 .pricing-container {
-  background-color: white;
   display: flex;
   justify-content: center;
 }
 
 .pricing {
-  background-color: white;
+  background-color: #040C15;
   text-align: center;
   padding: 50px;
+  color: white;
 }
 .pricing h1 {
   font-size: 50px;
@@ -103,5 +103,11 @@
   }
   .pricing {
     margin: 0;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
