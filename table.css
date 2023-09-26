@@ -36,9 +36,14 @@
 
 .price li {
   padding: 0.5rem;
+  margin-left: 1rem;
   font-size: 0.8rem;
   text-align: left;
   color: white;
+}
+
+.founder-header-image {
+  margin-right: 1rem;
 }
 
 /* Pricing header */
