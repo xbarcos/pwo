@@ -21,6 +21,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="modal.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Poke World Online</title>
@@ -66,7 +67,7 @@
         <main class="hero container" data-aos="fade-up" data-aos-delay="400">
           <h1>TRAILER FASE ALPHA</h1>
           <video controls autoplay muted>
-            <source src="/" type="video/mp4">
+            <source src="/" type="video/mp4" />
           </video>
           <p>
             Acompanhe pelo discord o lançamento da primeira fase da Alpha
@@ -132,20 +133,6 @@
       </div>
     </div>
   </section> -->
-
-    <!-- <div class="services">
-      <h2>
-        Digite seu e-mail para receber informações sobre o lançamento da Beta!
-      </h2>
-      <div class="subscribe-box"></div>
-      <form class="flex-form">
-        <label for="from">
-          <i class="fa-solid fa-envelope"></i>
-        </label>
-        <input type="email" placeholder="Digite seu e-mail" />
-        <input type="submit" value="Enviar" />
-      </form>
-    </div> -->
     <section class="pricing">
       <h1>Founder Packs</h1>
       <p>
@@ -167,14 +154,17 @@
             <li>Título in-game de "<strong>Apoiador</strong>"</li>
             <li>Cargo no Discord com o mesmo nome dos títulos</li>
             <li>600 Ruby</li>
-            <li class="grey"><a href="#" class="button">Doar</a></li>
+            <li class="grey">
+              <a class="button" id="payStarterButton">Doar</a>
+            </li>
           </ul>
         </div>
         <div class="columns">
           <ul class="price">
             <li class="header">
               <img class="ball-icon" src="./assets/greatball.png" />
-              Trainer Pack</li>
+              Trainer Pack
+            </li>
             <li class="founder-header-image"></li>
             <li class="grey">R$49,95</li>
             <li>Acesso antecipado ao jogo desde a primeira fase alpha</li>
@@ -190,14 +180,17 @@
             <li>Conjunto de Vestimenta exclusivo</li>
             <li>200 Pokeballs</li>
             <li>200 Small Potions</li>
-            <li class="grey"><a href="#" class="button">Doar</a></li>
+            <li class="grey">
+              <a class="button" id="payTrainerButton">Doar</a>
+            </li>
           </ul>
         </div>
         <div class="columns">
           <ul class="price">
             <li class="header">
               <img class="ball-icon" src="./assets/ultraball.png" />
-              Explorer Pack</li>
+              Explorer Pack
+            </li>
             <li class="founder-header-image"></li>
             <li class="grey">R$65,95</li>
             <li>Acesso antecipado ao jogo desde a primeira fase alpha</li>
@@ -212,14 +205,17 @@
             <li>3 Cherish Balls</li>
             <li>300 Great Potions</li>
             <li>300 Super Potions</li>
-            <li class="grey"><a href="#" class="button">Doar</a></li>
+            <li class="grey">
+              <a class="button" id="payExplorerButton">Doar</a>
+            </li>
           </ul>
         </div>
         <div class="columns">
           <ul class="price">
             <li class="header">
               <img class="ball-icon" src="./assets/masterball.png" />
-              Legendary Founder Pack</li>
+              Legendary Founder Pack
+            </li>
             <li class="founder-header-image"></li>
             <li class="grey">R$95,80</li>
             <li>Acesso antecipado ao jogo desde a primeira fase alpha</li>
@@ -247,12 +243,35 @@
             <li>5 Cherish Balls</li>
             <li>500 Great Potions</li>
             <li>500 Super Potions</li>
-            <li class="grey"><a href="#" class="button">Doar</a></li>
+            <li class="grey">
+              <a class="button" id="payLegendaryButton">Doar</a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
-
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2 id="headerModal">Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <div class="services">
+            <h4>
+              Digite seu e-mail para iniciar a doação!
+            </h4>
+            <form class="flex-form" id="donate-form">
+              <label for="from">
+                <i class="fa-solid fa-envelope"></i>
+              </label>
+              <input type="email" id="email-input" placeholder="Digite seu e-mail" />
+              <input type="submit" id="modal-submit" value="Doar" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div>
         <img src="press-kit/pin-icon-128x128.png" alt="Logo PWO" />
@@ -269,5 +288,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>

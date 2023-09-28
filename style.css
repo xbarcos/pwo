@@ -370,7 +370,7 @@ a {
 }
 
 .flex-form {
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
   z-index: 10;
   position: relative;
@@ -380,11 +380,11 @@ a {
 
 .flex-form > * {
   border: 0;
+
   padding: 0 0 0 10px;
   background: #fff;
   line-height: 50px;
   font-size: 1rem;
-  border-radius: 0;
   outline: 0;
 }
 
