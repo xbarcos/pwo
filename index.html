@@ -258,16 +258,21 @@
         </div>
         <div class="modal-body">
           <div class="services">
-            <h4>
-              Digite seu e-mail para iniciar a doação!
-            </h4>
-            <form class="flex-form" id="donate-form">
-              <label for="from">
-                <i class="fa-solid fa-envelope"></i>
-              </label>
-              <input type="email" id="email-input" placeholder="Digite seu e-mail" />
+            <div class="labels">
+              <h4>
+                Digite seu e-mail para iniciar a doação!
+              </h4>
+            </div>
+            <form id="donate-form">
+              <div class="flex-form">
+                <label for="from">
+                  <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input type="email" id="email-input" placeholder="Digite seu e-mail" />
+              </div>
               <input type="submit" id="modal-submit" value="Doar" />
             </form>
+            <p class="modal-alert">O e-mail inserido, será o e-mail para onde será encaminhada as chaves de acesso, por favor preste atenção e confirme se digitou corretamente.</p>
           </div>
         </div>
       </div>

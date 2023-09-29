@@ -289,22 +289,13 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 54px 14px;
+  justify-content: space-around;
 }
 
-.services-content h2 {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 38px;
-  margin-bottom: 14px;
-}
-
-.services-content p {
-  line-height: 150%;
-  margin-bottom: 14px;
-  text-align: center;
-  max-width: 780px;
+.labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .services i {
@@ -353,53 +344,53 @@ a {
   text-decoration: none;
 }
 
-.flex-form input[type="submit"] {
+#donate-form input[type="submit"] {
   background: #ef3f5a;
   border: 1px solid #ef3f5a;
+  border-radius: 25px;
   color: #fff;
-  padding: 0 30px;
   cursor: pointer;
+  width: 100%;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  height: 2rem;
+  margin-top: 25px;
 }
 
-.flex-form input[type="submit"]:hover {
+#donate-form input[type="submit"]:hover {
   background: #d73851;
   border: 1px solid #d73851;
 }
 
+#donate-form {
+  width: 60%;
+  margin-top: 50px;
+}
+
 .flex-form {
-  margin-top: 10px;
   display: flex;
-  z-index: 10;
-  position: relative;
-  width: 500px;
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  padding: 5px;
+  background-color: whitesmoke;
 }
 
 .flex-form > * {
-  border: 0;
-
-  padding: 0 0 0 10px;
-  background: #fff;
-  line-height: 50px;
-  font-size: 1rem;
-  outline: 0;
+  margin-left: 15px;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: whitesmoke;
 }
 
-input[type="email"] {
-  flex-basis: 500px;
+.flex-form input {
+  border: none;
+  padding: 0 0 0 10;
 }
-
 @media screen and (max-width: 768px) {
-  .flex-form {
-    max-width: 300px;
-    justify-content: center;
+  #donate-form {
+    width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
-  .footer p {
-    max-width: 300px;
+  .flex-form input {
+    font-size: 0.8rem;
   }
 }

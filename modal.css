@@ -47,6 +47,11 @@
   padding: 2px 16px;
 }
 
+.modal-alert {
+  color: #d94140;
+  margin-top: 20px;
+}
+
 /* Modal Footer */
 .modal-footer {
   padding: 15px;
