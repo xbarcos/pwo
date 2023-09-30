@@ -18,6 +18,7 @@
   padding: 8px;
 }
 
+
 /* Style the list */
 .price {
   list-style-type: none;
@@ -37,7 +38,7 @@
 .price li {
   padding: 0.5rem;
   margin-left: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-align: left;
   color: white;
 }
@@ -70,11 +71,19 @@
 
 /* Grey list item */
 .price .grey {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
   font-weight: 800;
   text-align: center;
   padding-bottom: 1rem;
+  color: #9bff9b;
+}
+
+.em {
+  color: #ff5757;
+}
+.yellow {
+  color: #ffe657;
 }
 
 /* The "Sign Up" button */
