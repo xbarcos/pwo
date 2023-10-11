@@ -1,0 +1,127 @@
+.pricing-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing {
+  background-color: #040C15;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+.pricing h1 {
+  font-size: 50px;
+}
+/* Create three columns of equal width */
+.columns {
+  width: 25.5%;
+  padding: 8px;
+}
+
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #06121e;
+  border-radius: 1rem;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price li {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  font-size: 0.85rem;
+  text-align: left;
+  color: white;
+}
+
+.founder-header-image {
+  margin-right: 1rem;
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #06121e;
+  color: white;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+
+.founder-header-image {
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  padding: 0.8rem;
+}
+
+/* Grey list item */
+.price .grey {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #9bff9b;
+}
+
+.em {
+  color: #ff5757;
+}
+.yellow {
+  color: #ffe657;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #d34040;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  background-color: #d26060;
+}
+
+.ball-icon {
+  width: 45px;
+  vertical-align: -0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .columns {
+    width: 100%;
+  }
+  .pricing {
+    margin: 0;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

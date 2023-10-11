@@ -20,6 +20,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="modal.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Poke World Online</title>
@@ -63,16 +65,18 @@
         </nav>
 
         <main class="hero container" data-aos="fade-up" data-aos-delay="400">
-          <h1>JOGUE CONOSCO</h1>
-          <p>
-            Acompanhe pelo discord o lançamento da primeira fase da Alpha
-            Fechada no dia 30 de Setembro de 2023!
-          </p>
+          <video autoplay muted loop>
+            <source src="./assets/mini-teaser-alpha.mp4" type="video/mp4" />
+          </video>
+          <h2 style="margin-top: 1%">
+            A Alpha fase 1 já está liberada, baixe o jogo no botão abaixo e crie já sua conta!
+            <!-- A Alpha fase 1 será liberada às 23:00 do dia 30/09! -->
+          </h2>
+          <h4 style="color: gray">*Uma chave de acesso é necessária.</h4>
           <a
-            href="https://discord.gg/Etn9aRJ9me"
+            href="https://drive.google.com/uc?export=download&id=1fsOVtmihSD7Ndla_kCT1Wk_LnQ9NDtZb"
             class="button-contact"
-            target="_blank"
-            >Acompanhe Já!</a
+            >Download</a
           >
         </main>
       </header>
@@ -82,33 +86,33 @@
         <div id="progress-bar"></div>
         <ul id="progress-num">
           <li class="step">
-            <img src="./assets/pokeball.png"/>
+            <img src="./assets/pokeball.png" />
             Alpha 1
           </li>
           <li class="step inactive">
-            <img src="./assets/pokeball.png"/>
+            <img src="./assets/pokeball.png" />
             Alpha 2
           </li>
           <li class="step inactive">
-            <img src="./assets/pokeball.png"/>
+            <img src="./assets/pokeball.png" />
             Alpha 3
           </li>
           <li class="step inactive">
-            <img src="./assets/greatball.png"/>
+            <img src="./assets/pokeball.png" />
             Closed Beta
           </li>
           <li class="step inactive">
-            <img src="./assets/ultraball.png"/>
+            <img src="./assets/pokeball.png" />
             Open Beta
           </li>
           <li class="step inactive">
-            <img src="./assets/masterball.png"/>
+            <img src="./assets/pokeball.png" />
             Final Release
           </li>
         </ul>
       </div>
     </section>
-    
+
     <!-- <section class="about">
     <div class="container about-content">
       <div data-aos="zoom-in" data-aos-delay="100">
@@ -128,30 +132,186 @@
       </div>
     </div>
   </section> -->
-
-    <div class="services">
-      <h2>
-        Digite seu e-mail para receber informações sobre o lançamento da Beta!
-      </h2>
-      <div class="subscribe-box"></div>
-      <form class="flex-form">
-        <label for="from">
-          <i class="fa-solid fa-envelope"></i>
-        </label>
-        <input type="email" placeholder="Digite seu e-mail" />
-        <input type="submit" value="Enviar" />
-      </form>
-    </div>
-
-    <footer class="footer">
-      <div>
-        <img src="press-kit/pin-icon-128x128.png" alt="Logo PWO" />
-      </div>
-
+    <section class="pricing">
+      <h1>Founder Packs</h1>
       <p>
-        Pokémon Copyright © 1995 - 2023 Nintendo/Creatures Inc./GAME FREAK Inc.
+        Os Founder Packs são uma forma dos jogadores poderem auxiliar a equipe
+        com o desenvolvimento, e também conseguirem conteúdos exclusivos.
+        Atualmente é a forma mais eficaz de conseguir uma chave de acesso
       </p>
-      <p>
+      <div class="pricing-container">
+        <div class="columns">
+          <ul class="price">
+            <li class="header">
+              Starter
+            </li>
+            <li class="grey">R$28,50</li>
+            <li>• Acesso antecipado ao jogo desde a primeira fase Alpha</li>
+            <li>• Título in-game de <strong class="em">Apoiador</strong></li>
+            <li>• Cargo no Discord com o mesmo nome do título</li>
+            <li>• <strong class="em">600</strong> Ruby</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="grey">
+              <a class="button" id="payStarterButton">Doar</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columns">
+          <ul class="price">
+            <li class="header">
+              Trainer
+            </li>
+            <li class="grey">R$49,95</li>
+            <li>• Acesso antecipado ao jogo desde a primeira fase alpha</li>
+            <li>• Título in-game de <strong class="em">Apoiador</strong></li>
+            <li>• Cargo no Discord com o mesmo nome do título</li>
+            <li>• Conjunto de Vestimenta exclusivo</li>
+            <li>• <strong class="em">1</strong> key para presentear o seu amigo(a)</li>
+            <li>• <strong class="em">1050</strong> Ruby</li>
+            <li>• <strong class="em">200</strong> Pokeballs</li>
+            <li>• <strong class="em">200</strong> Small Potions</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="grey">
+              <a class="button" id="payTrainerButton">Doar</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columns">
+          <ul class="price">
+            <li class="header">
+              Explorer
+            </li>
+            <li class="grey">R$65,95</li>
+            <li>• Acesso antecipado ao jogo desde a primeira fase alpha</li>
+            <li>• Título in-game de <strong class="em">Apoiador</strong></li>
+            <li>• Cargo no Discord com o mesmo nome do título</li>
+            <li>• Conjunto de Vestimenta exclusivo</li>
+            <li>• <strong class="em">2</strong> keys para presentear os seus amigos(as)</li>
+            <li>• <strong class="em">1450</strong> Ruby</li>
+            <li>• <strong class="em">300</strong> Pokeballs, Greatballs e Ultraballs</li>
+            <li>• <strong class="em">2</strong> Cherish Balls</li>
+            <li>• <strong class="em">300</strong> Great Potions e Super Potions</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="grey">
+              <a class="button" id="payExplorerButton">Doar</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columns">
+          <ul class="price">
+            <li class="header">
+              Legendary
+            </li>
+            <li class="grey">R$95,80</li>
+            <li>• Acesso antecipado ao jogo desde a primeira fase alpha</li>
+            <li>• Título in-game de <strong class="em">Apoiador Lendário</strong></li>
+            <li>• Cargo no Discord com o mesmo nome do título</li>
+            <li>• Conjunto de Vestimenta exclusivo</li>
+            <li>
+              • Uma estátua com o nome do seu personagem adicionada no jogo no
+              lançamento oficial
+            </li>
+            <li>• <strong class="em">2080</strong> Ruby</li>
+            <li>• <strong class="em">4</strong> keys para presentear os seus amigos(as)</li>
+            <li>• <strong class="em">1</strong> Pikachu Egg</li>
+            <li>• <strong class="em">1</strong> Eevee Egg</li>
+            <li>
+              • <strong class="em">1</strong> Shiny Pokémon Egg
+              <italic
+                >(um ovo com <strong class="em">100%</strong> de chance de chocar um Pokémon Shiny
+                aleatoriamente)
+              </italic>
+            </li>
+            <li>• <strong class="em">1</strong> Incubadora Rápida</li>
+            <li>• <strong class="em">500</strong> Greatballs e Ultraballs</li>
+            <li>• <strong class="em">5</strong> Cherish Balls</li>
+            <li>• <strong class="em">500</strong> Great Potions e Super Potions</li>
+            <li></li>
+            <li class="grey">
+              <a class="button" id="payLegendaryButton">Doar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2 id="headerModal">Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <div class="services">
+            <div class="labels">
+              <h4>
+                Digite seu e-mail para iniciar a doação!
+              </h4>
+            </div>
+            <form id="donate-form">
+              <div class="flex-form">
+                <label for="from">
+                  <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input type="email" id="email-input" placeholder="Digite seu e-mail" />
+              </div>
+              <input type="submit" id="modal-submit" value="Doar" />
+            </form>
+            <p class="modal-alert">O e-mail inserido, será o e-mail para onde será encaminhada as chaves de acesso, por favor preste atenção e confirme se digitou corretamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+
+      <p style="color: gray">
         Pokémon And All Respective Names are Trademarks of Nintendo 1996-2023.
         Poke World Online is not affiliated with Nintendo, Creatures Inc. and
         GAME FREAK Inc.
@@ -166,5 +326,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>
