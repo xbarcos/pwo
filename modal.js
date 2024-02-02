@@ -1,13 +1,9 @@
 let modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 let trainerBtn = document.getElementById("payTrainerButton");
 let explorerBtn = document.getElementById("payExplorerButton");
-
 let email = document.getElementById("email-input")
 let form = document.getElementById("donate-form")
 let headerModal = document.getElementById("headerModal")
-// Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 var value = ""
 
@@ -16,35 +12,45 @@ const makeOrder = (email, bundle) => {
 		"mail": email.value,
 		"bundle": bundle
 	};
-  fetch("https://donate.pokeworldonline.com:8443/api/v1/donate/create", {
+  fetch("https://playpwo.store:8443/api/v1/donate/create", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   })
   .then(res => res.text())
   .then(response => {
-    window.location.replace(response);
-  })  
+     console.log(response);
+     window.location.replace(response);
+   })  
 };
+
+function startLoading() {
+  const loaderContainer = document.getElementById('loader-container');
+  loaderContainer.style.display = 'flex';
+}
 
 // When the user clicks on the button, open the modal
 
 trainerBtn.onclick = function () {
 	headerModal.innerHTML = "Adquirir o Trainer Founder Pack"
   modal.style.display = "block";
-  value = "trainer";
+  value = "new-trainer";
 };
 
 explorerBtn.onclick = function () {
 	headerModal.innerHTML = "Adquirir o Explorer Founder Pack"
   modal.style.display = "block";
-  value = "explorer";
+  value = "kanto-explorer";
 };
 
 
 const submitDonate = (event) => {
   if (value != "") {
+    startLoading();
     makeOrder(email, value);
+  }
+  else {
+    modal.style.display = "none";
   }
   event.preventDefault();
   cleanForm();
