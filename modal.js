@@ -1,10 +1,8 @@
 let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-let starterBtn = document.getElementById("payStarterButton");
 let trainerBtn = document.getElementById("payTrainerButton");
 let explorerBtn = document.getElementById("payExplorerButton");
-let legendaryBtn = document.getElementById("payLegendaryButton");
 
 let email = document.getElementById("email-input")
 let form = document.getElementById("donate-form")
@@ -30,11 +28,6 @@ const makeOrder = (email, bundle) => {
 };
 
 // When the user clicks on the button, open the modal
-starterBtn.onclick = function () {
-	headerModal.innerHTML = "Adquirir o Starter Founder Pack"
-  modal.style.display = "block";
-  value = "starter";
-};
 
 trainerBtn.onclick = function () {
 	headerModal.innerHTML = "Adquirir o Trainer Founder Pack"
@@ -46,14 +39,8 @@ explorerBtn.onclick = function () {
 	headerModal.innerHTML = "Adquirir o Explorer Founder Pack"
   modal.style.display = "block";
   value = "explorer";
-
 };
 
-legendaryBtn.onclick = function () {
-	headerModal.innerHTML = "Adquirir o Legendary Founder Pack"
-  modal.style.display = "block";
-  value = "legendary";
-};
 
 const submitDonate = (event) => {
   if (value != "") {
