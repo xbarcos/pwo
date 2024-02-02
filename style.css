@@ -10,15 +10,12 @@
   --line-border-empty: #e0e0e0;
 }
 
-header {
-  width: 100%;
-}
-
 .header-content {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 i {
@@ -36,7 +33,7 @@ i {
 
 .header-icons a:hover i {
   animation: translateY 0.8s infinite alternate;
-  color: #d34040;
+  color: #FDD23C;
 }
 
 @keyframes translateY {
@@ -57,8 +54,8 @@ i {
 }
 
 .header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
+  border: 1px solid #e3bd36;
+  background-color: #e3bd36;
 }
 
 .header-logo {
@@ -102,7 +99,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-color: #040C15;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/bg.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -123,7 +120,7 @@ i {
   justify-content: center;
   padding: 14px;
 }
-.hero h1 {
+.hero h1{
   text-align: center;
   line-height: 150%;
   max-width: 940px;
@@ -139,10 +136,17 @@ i {
   height: 50%;
 }
 
+.hero-img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 .button-contact {
   padding: 14px 28px;
   color: #fff;
-  background-color: #d94140;
+  background-color: #e3bd36;
   border: 0;
   border-radius: 25px;
   font-size: 18px;
@@ -151,12 +155,13 @@ i {
 }
 
 .button-contact:disabled {
-  background-color: #de6766;
+  background-color: #fddf76;
   cursor: default;
 }
 
 .button-contact:not([disabled]):hover {
   animation: scaleButton 0.8s alternate infinite;
+  background-color: #fddf76
 }
 /* PROGRESS BAR SECTION */
 
@@ -168,9 +173,9 @@ i {
 
 #progress-bar {
   position: absolute;
-  background: #d94140;
+  background: #fdd23c;
   height: 5px;
-  width: 15%;
+  width: 28%;
   top: 50%;
   left: 0;
 }
@@ -241,6 +246,12 @@ i {
   .hero video {
     width: 320px;
     height: 240px;
+  }
+  .hero-img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 25px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -323,7 +334,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #040C15;
+  background-color: #06121e;
 }
 
 button {
@@ -345,8 +356,8 @@ a {
 }
 
 #donate-form input[type="submit"] {
-  background: #ef3f5a;
-  border: 1px solid #ef3f5a;
+  background: #fdd23c;
+  border: 1px solid #fdd23c;
   border-radius: 25px;
   color: #fff;
   cursor: pointer;
@@ -359,8 +370,8 @@ a {
 }
 
 #donate-form input[type="submit"]:hover {
-  background: #d73851;
-  border: 1px solid #d73851;
+  background: #fdd23c;
+  border: 1px solid #fdd23c;
 }
 
 #donate-form {
@@ -392,5 +403,65 @@ a {
   }
   .flex-form input {
     font-size: 0.8rem;
+  }
+}
+
+.downloads {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 50px 0 50px 0;
+}
+
+.download-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 14px;
+}
+
+.card i {
+  font-size: 5rem;
+  color: #fdd23c;
+}
+
+.card li {
+  text-align: start;
+  padding-top: 10px;
+}
+
+.card h3 {
+  text-align: start;
+}
+
+.card ul {
+  padding-bottom: 50px;
+  list-style-type: none;
+}
+
+.card {
+  padding: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: auto;
+    align-items: center;
+  }
+
+  .downloads {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .hero {
+    text-align: center;
   }
 }

@@ -1,6 +1,9 @@
 .pricing-container {
   display: flex;
   justify-content: center;
+  align-items: end;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .pricing {
@@ -9,13 +12,33 @@
   padding: 50px;
   color: white;
 }
+
+.pricing:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
 .pricing h1 {
   font-size: 50px;
+}
+
+.pricing p {
+  font-size: 20px;
+  padding: 0 200px 0 200px;
+}
+@media screen and (max-width: 768px) {
+  .pricing p {
+    padding: 0;
+  }
+  
+  footer {
+    text-align: center;
+  }
 }
 /* Create three columns of equal width */
 .columns {
   width: 25.5%;
   padding: 8px;
+  margin-bottom: 50px;
 }
 
 
@@ -71,16 +94,16 @@
 
 /* Grey list item */
 .price .grey {
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0;
   font-weight: 800;
   text-align: center;
   padding-bottom: 1rem;
-  color: #9bff9b;
+  color: #ffe657;
 }
 
 .em {
-  color: #ff5757;
+  color: #FDD23C;
 }
 .yellow {
   color: #ffe657;
