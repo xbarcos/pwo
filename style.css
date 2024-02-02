@@ -215,7 +215,9 @@ i {
   filter: grayscale(100%);
 }
 
-
+.mb-5 {
+  margin-bottom: 5rem;
+}
 
 @keyframes scaleButton {
   from {

@@ -38,7 +38,6 @@
 .columns {
   width: 25.5%;
   padding: 8px;
-  margin-bottom: 50px;
 }
 
 
@@ -128,6 +127,20 @@
 .ball-icon {
   width: 45px;
   vertical-align: -0.6rem;
+}
+
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gifFounders {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 @media only screen and (max-width: 768px) {
