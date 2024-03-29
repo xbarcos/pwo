@@ -458,6 +458,41 @@ a {
   margin-top: 14px;
 }
 
+.terms {
+  background-color: whitesmoke;
+  padding: 50px 0 50px 0;
+}
+
+.terms h1 {
+  text-align: center;
+}
+
+.terms-container {
+  max-width: 90%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5rem;
+  gap: 10px;
+  margin-top: 14px;
+}
+.terms-container ul, li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.terms-container p {
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .terms-container {
+    margin-left: 1rem;
+  }
+}
+
 .card i {
   font-size: 5rem;
   color: #fdd23c;
