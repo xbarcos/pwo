@@ -309,9 +309,9 @@ i {
   }
 }
 .services {
-  background-color: #fff;
-  color: #232224;
+  color: white;
   display: flex;
+  gap: 15px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -373,7 +373,8 @@ a {
   background: #fdd23c;
   border: 1px solid #fdd23c;
   border-radius: 25px;
-  color: #fff;
+  color: black;
+  font-weight: bold;
   cursor: pointer;
   width: 100%;
   -webkit-transition: all 0.2s;
@@ -398,6 +399,10 @@ a {
   border-radius: 25px;
   padding: 5px;
   background-color: whitesmoke;
+}
+
+#donate-form input{
+
 }
 
 .flex-form > * {
@@ -491,6 +496,14 @@ a {
   .terms-container {
     margin-left: 1rem;
   }
+}
+
+.form-control {
+  width: 55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card i {
