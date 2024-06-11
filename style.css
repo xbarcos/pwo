@@ -154,6 +154,10 @@ i {
   margin: 14px 0;
 }
 
+.button-contact a {
+  color: white;
+}
+
 .button-download {
   padding: 14px 28px;
   color: #fff;
@@ -187,7 +191,7 @@ i {
   position: absolute;
   background: #fdd23c;
   height: 5px;
-  width: 50%;
+  width: 65%;
   top: 50%;
   left: 0;
 }
